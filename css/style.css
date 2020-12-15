@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.32); 
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.32);
+}
+
+.bar {
+    width: 120px;
+    height: 3px;
+    margin: 10px auto;
+    border-radius: 1.5px;
+    background-color: orange;
+}
+
+.bg-effect {
+    width: 180px;
+    height: calc(100% - 5px);
+    background-color: rgba(255, 255, 255, .03);
+    position: absolute;
+    top: 2.5px;
+    left: 30%;
+    z-index: -1;
+    transform: skew(-10deg, -10deg) rotate(10deg);
+}
+
+main {
+    width: 100%;
+    padding: 0 2%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+
+section#main-container {
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5) /* #2488C1*/;
+    color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+main h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+}
+
+section#main-container #output-area {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    line-height: 105px;
+    margin: 20px auto;
+    border: 2px solid hsla(0, 0%, 100%, 0.342);
+    border-radius: 60px;
+    font-size: 32px;
+    text-align: center;
+    border-top: 8px solid #23CF5C;
+    border-bottom: 8px solid #23CF5C;
+}
+
+section#main-container .bt {
+    width: 155px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    border: none;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    outline: 0;
+    
+}
+
+section#main-container i {
+    margin: 0 10px;
+}
+
+section#main-container .bt:nth-of-type(1) {
+    background-color: #23CF5C; 
+}
+
+section#main-container .bt:nth-of-type(2) {
+    background-color: #EFAD4D;
+}
+
+section#main-cointainer .bt:hover:nth-of-type(1) {   
+    background-color: #29b457;
+    transition: .3s;
+}
+
+section#main-container .bt:hover:nth-of-type(2) {   
+    background-color: #ffab2d;
+    transition: .3s;
+}
+
+@media screen and (max-width: 500px) {
+    .bg-effect {
+        top: 2.5px;
+        left: 17%;
+    }
+    main h1 {
+        font-size: 36px;
+    }
+
+    section#main-container {
+        max-width: 280px;
+        padding: 10px 20px;
+    }
+}
